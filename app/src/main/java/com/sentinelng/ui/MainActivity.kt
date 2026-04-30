@@ -2,15 +2,9 @@ package com.sentinelng.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.view.inputmethod.EditorInfo
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.sentinelng.R
 import com.sentinelng.data.ModelType
-import com.sentinelng.data.NluIntent
-import com.sentinelng.data.SupportedLanguage
 import com.sentinelng.databinding.ActivityMainBinding
 import com.sentinelng.utils.LanguageManager
 
@@ -25,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupUI()
-        observeViewModel()
     }
 
     override fun onResume() {
@@ -40,47 +33,19 @@ class MainActivity : AppCompatActivity() {
         // Quick-action buttons
         binding.btnCropDoctor.setOnClickListener { openCamera(ModelType.CROP_DOCTOR) }
         binding.btnHealthScan.setOnClickListener { openCamera(ModelType.HEALTH_SCAN) }
-        binding.btnChat.setOnClickListener { startActivity(Intent(this, ChatActivity::class.java)) }
+        
+        // Chat feature removed for this build
+        binding.btnChat.setOnClickListener { 
+            // Feature disabled
+        }
+        
         binding.btnSecurity.setOnClickListener { startActivity(Intent(this, SecurityActivity::class.java)) }
         binding.btnSettings.setOnClickListener { startActivity(Intent(this, SettingsActivity::class.java)) }
 
-        // NLU input
-        binding.etNluInput.setOnEditorActionListener { _, actionId, _ ->
-            if (actionId == EditorInfo.IME_ACTION_SEND) {
-                submitNluQuery()
-                true
-            } else false
-        }
-        binding.btnNluSend.setOnClickListener { submitNluQuery() }
-    }
-
-    private fun observeViewModel() {
-        viewModel.nluResult.observe(this) { result ->
-            result ?: return@observe
-            binding.etNluInput.text?.clear()
-
-            when (result.intent) {
-                NluIntent.HEALTH   -> openCamera(ModelType.HEALTH_SCAN)
-                NluIntent.CROP     -> openCamera(ModelType.CROP_DOCTOR)
-                NluIntent.SECURITY -> startActivity(Intent(this, SecurityActivity::class.java))
-                NluIntent.OTHER    -> {
-                    val msg = LanguageManager.getOtherIntentMessage(viewModel.getCurrentLanguage())
-                    Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
-                }
-            }
-            viewModel.clearNluResult()
-        }
-
-        viewModel.isLoading.observe(this) { loading ->
-            binding.progressNlu.visibility = if (loading) View.VISIBLE else View.GONE
-            binding.btnNluSend.isEnabled = !loading
-        }
-    }
-
-    private fun submitNluQuery() {
-        val text = binding.etNluInput.text?.toString()?.trim()
-        if (text.isNullOrEmpty()) return
-        viewModel.classifyIntent(text)
+        // NLU input removed for this build
+        // Hide the NLU search bar container
+        binding.etNluInput.isEnabled = false
+        binding.btnNluSend.isEnabled = false
     }
 
     private fun openCamera(modelType: ModelType) {
