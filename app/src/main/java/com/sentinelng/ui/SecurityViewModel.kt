@@ -85,4 +85,12 @@ class SecurityViewModel(application: Application) : AndroidViewModel(application
     }
 
     fun clearReportResult() { _reportResult.value = null }
+
+    /**
+     * Clears the network cache and reloads alerts.
+     */
+    fun refreshWithClearCache() {
+        dataSource.clearCache()
+        loadAlerts()
+    }
 }

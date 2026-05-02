@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_send.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_send.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_advice.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_advice.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_send_button.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_send_button.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_bubble_user.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_bubble_user.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_item_alert.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/item_alert.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_viewfinder.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_viewfinder.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_report.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_report.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_health.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_health.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_delete.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_activity_security.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/activity_security.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_chip.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_alert.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_alert.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_activity_main.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_crop.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_crop.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_activity_result.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/activity_result.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_capture_button.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_capture_button.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_bubble_assistant.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_bubble_assistant.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_avatar.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_chat.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_chat.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_location.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_location.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_activity_settings.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.sentinelng.app-main-54:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_flood.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_flood.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_security.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_security.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_status_overlay.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_status_overlay.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_activity_camera.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/activity_camera.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_settings.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.sentinelng.app-main-54:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_item_chat_user.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/item_chat_user.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_chip_outline.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_chip_outline.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_sentinel_logo.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_sentinel_logo.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_camera_shutter.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_camera_shutter.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_ic_fire.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/ic_fire.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/drawable_bg_input_field.xml.flat",
+        "source": "com.sentinelng.app-main-54:/drawable/bg_input_field.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-merged_res-52:/layout_item_chat_assistant.xml.flat",
+        "source": "com.sentinelng.app-main-54:/layout/item_chat_assistant.xml"
+    }
+]

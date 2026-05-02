@@ -5,7 +5,7 @@ import retrofit2.http.GET
 /**
  * Retrofit API interface for the Sentinel-NG security alerts backend.
  *
- * Base URL: https://nw0.vercel.app/
+ * Base URL: https://nw0.vercel.app
  * OkHttp handles caching (25 MB, max-stale 1 day) so this endpoint
  * works offline after the first successful fetch.
  */

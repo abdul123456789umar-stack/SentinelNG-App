@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/activity_settings.xml",
+        "source": "com.sentinelng.app-main-54:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/item_alert.xml",
+        "source": "com.sentinelng.app-main-54:/layout/item_alert.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/activity_result.xml",
+        "source": "com.sentinelng.app-main-54:/layout/activity_result.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/activity_main.xml",
+        "source": "com.sentinelng.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/activity_security.xml",
+        "source": "com.sentinelng.app-main-54:/layout/activity_security.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/item_chat_assistant.xml",
+        "source": "com.sentinelng.app-main-54:/layout/item_chat_assistant.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/item_chat_user.xml",
+        "source": "com.sentinelng.app-main-54:/layout/item_chat_user.xml"
+    },
+    {
+        "merged": "com.sentinelng.app-mergeDebugResources-51:/layout/activity_camera.xml",
+        "source": "com.sentinelng.app-main-54:/layout/activity_camera.xml"
+    }
+]

@@ -14,7 +14,7 @@ import java.io.File
 import java.util.concurrent.TimeUnit
 
 // TODO: replace with actual URL when backend changes
-private const val BASE_URL = "https://nw0.vercel.app/"
+private const val BASE_URL = "https://nw0.vercel.app"
 private const val CACHE_DIR_NAME = "sentinel_http_cache"
 private const val CACHE_SIZE_BYTES = 25L * 1024 * 1024  // 25 MB
 private const val MAX_STALE_DAYS = 1L                   // serve stale for up to 1 day offline
@@ -50,6 +50,21 @@ class RealSecurityDataSource(context: Context) {
         val dtos = api.getAlerts()
         Log.d(TAG, "Fetched ${dtos.size} alerts from API")
         return dtos.mapNotNull { it.toAlert() }
+    }
+
+    /**
+     * Clears the HTTP disk cache.
+     */
+    fun clearCache() {
+        try {
+            val cacheDir = File(appContext.cacheDir, CACHE_DIR_NAME)
+            if (cacheDir.exists()) {
+                cacheDir.deleteRecursively()
+                Log.d(TAG, "HTTP cache cleared successfully")
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to clear HTTP cache", e)
+        }
     }
 
     // ── Retrofit / OkHttp setup ────────────────────────────────────────────

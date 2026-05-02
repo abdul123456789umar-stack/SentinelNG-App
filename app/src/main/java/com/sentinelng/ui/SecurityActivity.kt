@@ -49,7 +49,7 @@ class SecurityActivity : AppCompatActivity() {
         observeViewModel()
 
         binding.btnReportIncident.setOnClickListener { showReportDialog() }
-        binding.swipeRefresh.setOnRefreshListener { viewModel.loadAlerts() }
+        binding.swipeRefresh.setOnRefreshListener { viewModel.refreshWithClearCache() }
 
         viewModel.loadAlerts()
         checkLocationPermission()
