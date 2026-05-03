@@ -5,14 +5,11 @@ color background
 color black
 color bubble_assistant
 color bubble_user
-color card_blue
-color card_gray
-color card_green
-color card_purple
-color card_red
-color confidence_high
-color confidence_low
-color confidence_medium
+color glass_border
+color glass_white
+color neon_blue
+color neon_pink
+color neon_purple
 color primary
 color primary_dark
 color primary_light
@@ -21,6 +18,7 @@ color severity_high
 color severity_low
 color severity_medium
 color surface
+color surface_variant
 color text_primary
 color text_secondary
 color white
@@ -32,6 +30,9 @@ drawable bg_capture_button
 drawable bg_chip
 drawable bg_chip_outline
 drawable bg_input_field
+drawable bg_scifi_button
+drawable bg_scifi_card
+drawable bg_scifi_hud_overlay
 drawable bg_send_button
 drawable bg_status_overlay
 drawable ic_advice
@@ -62,6 +63,7 @@ id btn_report_incident
 id btn_security
 id btn_settings
 id et_nlu_input
+id header_bg
 id iv_alert_icon
 id progress_bar
 id progress_nlu
@@ -73,6 +75,7 @@ id rb_yoruba
 id rg_language
 id rv_alerts
 id swipe_refresh
+id top_hud
 id tv_about
 id tv_advice
 id tv_alert_description
@@ -90,6 +93,7 @@ id tv_severity
 id tv_status
 id tv_status_text
 id tv_time
+id tv_title
 id tv_version
 id view_finder
 id view_severity_bar
@@ -158,5 +162,4 @@ string title_report_incident
 string title_security
 string title_settings
 style Theme.SentinelNG
-style Theme.SentinelNG.NoActionBar
 style Theme.SentinelNG.Splash

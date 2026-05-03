@@ -1449,11 +1449,6 @@ color button_material_dark
 color button_material_light
 color call_notification_answer_color
 color call_notification_decline_color
-color card_blue
-color card_gray
-color card_green
-color card_purple
-color card_red
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -1469,9 +1464,6 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
-color confidence_high
-color confidence_low
-color confidence_medium
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1518,6 +1510,8 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color glass_border
+color glass_white
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2171,6 +2165,9 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color neon_blue
+color neon_pink
+color neon_purple
 color notification_action_color_filter
 color notification_icon_bg_color
 color preference_fallback_accent_color
@@ -2196,6 +2193,7 @@ color severity_high
 color severity_low
 color severity_medium
 color surface
+color surface_variant
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -3099,6 +3097,9 @@ drawable bg_capture_button
 drawable bg_chip
 drawable bg_chip_outline
 drawable bg_input_field
+drawable bg_scifi_button
+drawable bg_scifi_card
+drawable bg_scifi_hud_overlay
 drawable bg_send_button
 drawable bg_status_overlay
 drawable btn_checkbox_checked_mtrl
@@ -3473,6 +3474,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id header_bg
 id header_title
 id hide_ime_id
 id hideable
@@ -3758,6 +3760,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id top_hud
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3784,6 +3787,7 @@ id tv_severity
 id tv_status
 id tv_status_text
 id tv_time
+id tv_title
 id tv_version
 id unchecked
 id uniform
@@ -4939,7 +4943,6 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_SentinelNG
-style Theme_SentinelNG_NoActionBar
 style Theme_SentinelNG_Splash
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar

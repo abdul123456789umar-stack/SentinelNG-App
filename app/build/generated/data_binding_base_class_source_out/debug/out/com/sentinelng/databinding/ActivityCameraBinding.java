@@ -30,6 +30,9 @@ public final class ActivityCameraBinding implements ViewBinding {
   public final ProgressBar progressBar;
 
   @NonNull
+  public final LinearLayout topHud;
+
+  @NonNull
   public final TextView tvCameraHint;
 
   @NonNull
@@ -42,12 +45,13 @@ public final class ActivityCameraBinding implements ViewBinding {
   public final PreviewView viewFinder;
 
   private ActivityCameraBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton btnCapture,
-      @NonNull ProgressBar progressBar, @NonNull TextView tvCameraHint,
-      @NonNull LinearLayout tvStatus, @NonNull TextView tvStatusText,
-      @NonNull PreviewView viewFinder) {
+      @NonNull ProgressBar progressBar, @NonNull LinearLayout topHud,
+      @NonNull TextView tvCameraHint, @NonNull LinearLayout tvStatus,
+      @NonNull TextView tvStatusText, @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
     this.btnCapture = btnCapture;
     this.progressBar = progressBar;
+    this.topHud = topHud;
     this.tvCameraHint = tvCameraHint;
     this.tvStatus = tvStatus;
     this.tvStatusText = tvStatusText;
@@ -93,6 +97,12 @@ public final class ActivityCameraBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.top_hud;
+      LinearLayout topHud = ViewBindings.findChildViewById(rootView, id);
+      if (topHud == null) {
+        break missingId;
+      }
+
       id = R.id.tv_camera_hint;
       TextView tvCameraHint = ViewBindings.findChildViewById(rootView, id);
       if (tvCameraHint == null) {
@@ -117,7 +127,7 @@ public final class ActivityCameraBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCameraBinding((ConstraintLayout) rootView, btnCapture, progressBar,
+      return new ActivityCameraBinding((ConstraintLayout) rootView, btnCapture, progressBar, topHud,
           tvCameraHint, tvStatus, tvStatusText, viewFinder);
     }
     String missingId = rootView.getResources().getResourceName(id);

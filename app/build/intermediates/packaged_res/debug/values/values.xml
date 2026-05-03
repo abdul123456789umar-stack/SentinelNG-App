@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="accent">#F4A922</color>
-    <color name="background">#F2F4F0</color>
+    <color name="accent">#7000FF</color>
+    <color name="background">#000814</color>
     <color name="black">#000000</color>
-    <color name="bubble_assistant">#FFFFFF</color>
-    <color name="bubble_user">#1B6B35</color>
-    <color name="card_blue">#1565C0</color>
-    <color name="card_gray">#455A64</color>
-    <color name="card_green">#2E7D32</color>
-    <color name="card_purple">#6A1B9A</color>
-    <color name="card_red">#C62828</color>
-    <color name="confidence_high">#2E7D32</color>
-    <color name="confidence_low">#C62828</color>
-    <color name="confidence_medium">#F57F17</color>
-    <color name="primary">#1B6B35</color>
-    <color name="primary_dark">#0D3D1E</color>
-    <color name="primary_light">#E8F5E9</color>
-    <color name="severity_critical">#B71C1C</color>
-    <color name="severity_high">#E53935</color>
-    <color name="severity_low">#43A047</color>
-    <color name="severity_medium">#FB8C00</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="text_primary">#1A1A1A</color>
-    <color name="text_secondary">#6B7280</color>
+    <color name="bubble_assistant">#0A111F</color>
+    <color name="bubble_user">#7000FF</color>
+    <color name="glass_border">#3300E5FF</color>
+    <color name="glass_white">#1AFFFFFF</color>
+    <color name="neon_blue">#00E5FF</color>
+    <color name="neon_pink">#FF00E5</color>
+    <color name="neon_purple">#7000FF</color>
+    <color name="primary">#00E5FF</color>
+    <color name="primary_dark">#000814</color>
+    <color name="primary_light">#1A212B</color>
+    <color name="severity_critical">#FF1744</color>
+    <color name="severity_high">#FF5252</color>
+    <color name="severity_low">#00E676</color>
+    <color name="severity_medium">#FFD600</color>
+    <color name="surface">#0A111F</color>
+    <color name="surface_variant">#152033</color>
+    <color name="text_primary">#E0F7FA</color>
+    <color name="text_secondary">#80DEEA</color>
     <color name="white">#FFFFFF</color>
     <color name="white_70">#B3FFFFFF</color>
     <string name="about_text">Sentinel-NG is an offline-first AI platform for Nigerian communities. It provides crop disease diagnosis, health condition screening, security alerts, and multilingual conversational AI — all without requiring internet access.</string>
@@ -79,16 +77,15 @@
     <string name="title_report_incident">Report Incident</string>
     <string name="title_security">Security Alerts</string>
     <string name="title_settings">Settings</string>
-    <style name="Theme.SentinelNG" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.SentinelNG" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
         <item name="android:windowBackground">@color/background</item>
         <item name="android:statusBarColor">@color/primary_dark</item>
-    </style>
-    <style name="Theme.SentinelNG.NoActionBar" parent="Theme.SentinelNG">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
     </style>
     <style name="Theme.SentinelNG.Splash" parent="Theme.SentinelNG">
         <item name="android:windowNoTitle">true</item>

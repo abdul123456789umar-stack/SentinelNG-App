@@ -27,6 +27,9 @@ public final class ActivitySecurityBinding implements ViewBinding {
   public final MaterialButton btnReportIncident;
 
   @NonNull
+  public final View headerBg;
+
+  @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
@@ -38,16 +41,22 @@ public final class ActivitySecurityBinding implements ViewBinding {
   @NonNull
   public final TextView tvNoAlerts;
 
+  @NonNull
+  public final TextView tvTitle;
+
   private ActivitySecurityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnReportIncident, @NonNull ProgressBar progressBar,
-      @NonNull RecyclerView rvAlerts, @NonNull SwipeRefreshLayout swipeRefresh,
-      @NonNull TextView tvNoAlerts) {
+      @NonNull MaterialButton btnReportIncident, @NonNull View headerBg,
+      @NonNull ProgressBar progressBar, @NonNull RecyclerView rvAlerts,
+      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull TextView tvNoAlerts,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnReportIncident = btnReportIncident;
+    this.headerBg = headerBg;
     this.progressBar = progressBar;
     this.rvAlerts = rvAlerts;
     this.swipeRefresh = swipeRefresh;
     this.tvNoAlerts = tvNoAlerts;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -83,6 +92,12 @@ public final class ActivitySecurityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.header_bg;
+      View headerBg = ViewBindings.findChildViewById(rootView, id);
+      if (headerBg == null) {
+        break missingId;
+      }
+
       id = R.id.progress_bar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
@@ -107,8 +122,14 @@ public final class ActivitySecurityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySecurityBinding((ConstraintLayout) rootView, btnReportIncident,
-          progressBar, rvAlerts, swipeRefresh, tvNoAlerts);
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new ActivitySecurityBinding((ConstraintLayout) rootView, btnReportIncident, headerBg,
+          progressBar, rvAlerts, swipeRefresh, tvNoAlerts, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

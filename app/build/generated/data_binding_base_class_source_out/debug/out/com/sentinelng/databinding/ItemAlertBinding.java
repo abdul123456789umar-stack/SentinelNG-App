@@ -4,13 +4,13 @@ package com.sentinelng.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.card.MaterialCardView;
 import com.sentinelng.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class ItemAlertBinding implements ViewBinding {
   @NonNull
-  private final MaterialCardView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final ImageView ivAlertIcon;
@@ -41,7 +41,7 @@ public final class ItemAlertBinding implements ViewBinding {
   @NonNull
   public final View viewSeverityBar;
 
-  private ItemAlertBinding(@NonNull MaterialCardView rootView, @NonNull ImageView ivAlertIcon,
+  private ItemAlertBinding(@NonNull FrameLayout rootView, @NonNull ImageView ivAlertIcon,
       @NonNull TextView tvAlertDescription, @NonNull TextView tvAlertLocation,
       @NonNull TextView tvAlertTime, @NonNull TextView tvAlertTitle, @NonNull TextView tvSeverity,
       @NonNull View viewSeverityBar) {
@@ -57,7 +57,7 @@ public final class ItemAlertBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public MaterialCardView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -124,7 +124,7 @@ public final class ItemAlertBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemAlertBinding((MaterialCardView) rootView, ivAlertIcon, tvAlertDescription,
+      return new ItemAlertBinding((FrameLayout) rootView, ivAlertIcon, tvAlertDescription,
           tvAlertLocation, tvAlertTime, tvAlertTitle, tvSeverity, viewSeverityBar);
     }
     String missingId = rootView.getResources().getResourceName(id);

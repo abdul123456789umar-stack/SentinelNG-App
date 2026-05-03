@@ -39,9 +39,9 @@ class ResultActivity : AppCompatActivity() {
 
         // Colour code based on confidence
         val colour = when {
-            confidence > 0.75f -> getColor(R.color.confidence_high)
-            confidence > 0.50f -> getColor(R.color.confidence_medium)
-            else               -> getColor(R.color.confidence_low)
+            confidence > 0.75f -> getColor(R.color.severity_low)
+            confidence > 0.50f -> getColor(R.color.severity_medium)
+            else               -> getColor(R.color.severity_critical)
         }
         binding.tvConfidence.setTextColor(colour)
 
